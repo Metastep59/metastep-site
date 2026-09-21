@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mentions légales · MetaStep</title>
-<meta name="description" content="Mentions légales du site metastep.fr : éditeur, hébergeur et informations légales de MetaStep.">
+<title>Confidentialité · MetaStep</title>
+<meta name="description" content="Ce que le site metastep.fr fait et ne fait pas avec vos données : pas de traceur, pas de cookie hors Calendly.">
 <meta name="robots" content="noindex,follow">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="assets/site.css">
@@ -25,7 +25,7 @@
   a{color:var(--or);text-decoration:none}
   a:hover,a:focus{color:#E7C977}
   a:focus-visible,button:focus-visible{outline:2px solid var(--or);outline-offset:3px}
-  h1,h2,p,dl,dt,dd{margin:0}
+  h1,h2,p,dl,dt,dd,ul{margin:0}
 
   header.page{padding:24px clamp(20px,4vw,64px);display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid rgba(242,236,223,.08)}
   .logo{display:flex;align-items:center;gap:10px;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:20px;letter-spacing:.14em;color:var(--texte)}
@@ -42,10 +42,11 @@
   section{margin-top:40px}
   h2{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:24px;color:var(--texte)}
   section p{margin-top:12px;font-size:15.5px;line-height:1.7;color:#C9C2B4}
+  section ul{margin-top:12px;padding-left:20px;font-size:15.5px;line-height:1.7;color:#C9C2B4}
+  section li{margin-top:6px}
   .fiche{margin-top:16px;display:grid;grid-template-columns:auto 1fr;gap:10px 22px;font-size:15px}
   .fiche dt{color:var(--secondaire)}
   .fiche dd{margin:0;color:var(--texte)}
-  .note{margin-top:10px;font-size:13.5px;color:var(--discret)}
 
   .cta{margin-top:44px;padding-top:26px;border-top:1px solid rgba(242,236,223,.1)}
   .bouton{display:inline-flex;align-items:center;gap:8px;background:var(--or);color:var(--bg);font-weight:700;font-size:14.5px;padding:14px 22px;border-radius:999px}
@@ -66,48 +67,43 @@
 </header>
 
 <main>
-  <div class="fil"><span class="trait"></span><span class="label">Informations légales</span></div>
-  <h1>Mentions légales</h1>
-  <p class="chapo">Conformément aux articles 6-III et 19 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique.</p>
+  <div class="fil"><span class="trait"></span><span class="label">Vos données</span></div>
+  <h1>Confidentialité</h1>
+  <p class="chapo">Ce que ce site fait de vos données, en clair. Pas de page de dix écrans, pas de jargon.</p>
 
   <section>
-    <h2>Éditeur du site</h2>
+    <h2>Ce que le site ne fait pas</h2>
+    <p>Le site metastep.fr ne pose aucun traceur publicitaire, ne fait aucune mesure d'audience et ne dépose aucun cookie de son propre fait. Naviguer sur ce site ne vous fait suivre par personne.</p>
+  </section>
+
+  <section>
+    <h2>Le seul outil externe : Calendly</h2>
+    <p>La prise de rendez-vous se fait via Calendly, qui s'ouvre dans un autre onglet. Une fois là-bas, c'est Calendly qui dépose ses propres cookies, sur son propre site, selon ses propres règles. Rien de tout cela ne transite par metastep.fr.</p>
+  </section>
+
+  <section>
+    <h2>Les données que je reçois</h2>
+    <p>Je ne reçois vos informations que si vous me les donnez vous-même : en écrivant à contact@metastep.fr, ou en réservant un rendez-vous via Calendly. Dans ce cas :</p>
+    <ul>
+      <li>Votre nom</li>
+      <li>Votre adresse mail</li>
+      <li>Ce que vous m'écrivez ou renseignez pour le rendez-vous</li>
+    </ul>
+    <p>Ces informations sont conservées le temps de notre relation commerciale, et seulement pour ça. Elles ne sont jamais revendues ni cédées à un tiers.</p>
+  </section>
+
+  <section>
+    <h2>Vos droits</h2>
+    <p>Vous pouvez demander à accéder à vos données, à les corriger, ou à les faire supprimer, à tout moment. Il suffit d'écrire à <a href="mailto:contact@metastep.fr">contact@metastep.fr</a>.</p>
+  </section>
+
+  <section>
+    <h2>Responsable du traitement</h2>
     <dl class="fiche">
-      <dt>Raison sociale</dt><dd>MetaSetp</dd>
-      <dt>Nom commercial</dt><dd>MetaStep</dd>
-      <dt>Forme juridique</dt><dd>Société par actions simplifiée à associé unique (SASU)</dd>
-      <dt>Capital social</dt><dd>1 000 euros</dd>
-      <dt>SIREN</dt><dd>106 128 812</dd>
-      <dt>RCS</dt><dd>106 128 812 RCS Paris</dd>
-      <dt>TVA intracommunautaire</dt><dd>FR50106128812</dd>
+      <dt>Société</dt><dd>MetaSetp (nom commercial : MetaStep)</dd>
       <dt>Siège social</dt><dd>47 rue Vivienne, 75002 Paris</dd>
-      <dt>Directeur de la publication</dt><dd>Evan Marlière</dd>
       <dt>Contact</dt><dd><a href="mailto:contact@metastep.fr">contact@metastep.fr</a></dd>
     </dl>
-    <p class="note">« MetaSetp » est l'orthographe déposée au greffe du tribunal de commerce de Paris. Le nom commercial utilisé sur ce site et auprès des clients est MetaStep.</p>
-  </section>
-
-  <section>
-    <h2>Hébergement</h2>
-    <dl class="fiche">
-      <dt>Hébergeur</dt><dd>Netlify, Inc.</dd>
-      <dt>Adresse</dt><dd>512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis</dd>
-    </dl>
-  </section>
-
-  <section>
-    <h2>Propriété intellectuelle</h2>
-    <p>L'ensemble des contenus présents sur le site metastep.fr (textes, visuels, logo, structure) est la propriété exclusive de MetaSetp, sauf mention contraire. Toute reproduction ou diffusion, totale ou partielle, sans autorisation écrite préalable est interdite.</p>
-  </section>
-
-  <section>
-    <h2>Données personnelles et cookies</h2>
-    <p>Le fonctionnement des cookies et le traitement des données personnelles sont détaillés sur la page <a href="confidentialite.html">Confidentialité</a>.</p>
-  </section>
-
-  <section>
-    <h2>Responsabilité</h2>
-    <p>MetaSetp s'efforce d'assurer l'exactitude des informations diffusées sur ce site, sans pouvoir en garantir l'exhaustivité. Ces informations ont une valeur indicative et ne constituent pas un engagement contractuel : chaque prestation fait l'objet d'un devis propre.</p>
   </section>
 
   <div class="cta">
