@@ -375,7 +375,7 @@ summary:focus-visible,
   color:var(--gold);
   flex-shrink:0;
 }
-.ms-scr__tag--red{color:var(--red)}
+.ms-scr__tag--red{color:#EA6E5B}
 .ms-scr__muted{color:var(--dim)}
 .ms-scr__gold-text{color:var(--gold)}
 .ms-scr__divider{height:1px;background:var(--line)}
@@ -401,7 +401,7 @@ summary:focus-visible,
 .ms-scr__mail--highlight{border-color:rgba(210,174,91,0.5)}
 .ms-scr__mail-top{display:flex;justify-content:space-between;gap:10px;font-size:13px}
 .ms-scr__mail-from{font-weight:700;color:var(--cream)}
-.ms-scr__mail-time{color:var(--dim);font-size:12px;flex-shrink:0}
+.ms-scr__mail-time{color:var(--muted);font-size:12px;flex-shrink:0}
 .ms-scr__mail-body{color:var(--text);font-size:12px}
 .ms-scr__mail-tags{display:flex;gap:8px;flex-wrap:wrap;padding-top:2px}
 .ms-scr__mail-row{
@@ -479,12 +479,12 @@ summary:focus-visible,
 .ms-scr__doc-label{
   font-family:var(--font-mono);
   font-size:9px;
-  color:var(--dim);
+  color:var(--muted);
   letter-spacing:0.04em;
 }
 .ms-scr__doc-label--gold{color:var(--gold)}
 .ms-scr__doc-name{color:var(--cream);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.ms-scr__doc-note{color:var(--dim);font-size:11px}
+.ms-scr__doc-note{color:var(--muted);font-size:11px}
 .ms-scr__doc-note--gold{color:var(--gold)}
 
 /* compte-rendu */
