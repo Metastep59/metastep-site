@@ -12,10 +12,27 @@
 (function () {
   "use strict";
 
-  document.addEventListener("DOMContentLoaded", function () {
+  // On attend la fin du chargement, puis un moment creux : les sondes reseau
+  // (une par emplacement video) ne doivent pas concurrencer l'affichage.
+  demarrer(function () {
     initVideos();
     initJauge();
   });
+
+  function demarrer(suite) {
+    var lancer = function () {
+      if (window.requestIdleCallback) {
+        window.requestIdleCallback(suite, { timeout: 2000 });
+      } else {
+        window.setTimeout(suite, 200);
+      }
+    };
+    if (document.readyState === "complete") {
+      lancer();
+    } else {
+      window.addEventListener("load", lancer);
+    }
+  }
 
   // =====================================================================
   // Composant vidéo (.ms-video)
