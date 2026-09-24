@@ -9,3 +9,9 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Page Ligo : garantir que /ligo (sans barre finale) sert bien ligo/index.html
+[[redirects]]
+  from = "/ligo"
+  to = "/ligo/"
+  status = 200
